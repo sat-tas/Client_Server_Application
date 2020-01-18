@@ -1,0 +1,27 @@
+﻿<Window x:Class="Client.Windows.Fourth"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client.Windows"
+        mc:Ignorable="d"
+        Title="Принятие решений в условии неопределённости" Height="450" Width="800" Closed="Window_Closed">
+    <Grid>
+        <DataGrid x:Name="dg" HorizontalAlignment="Left" Height="248" Margin="40,161,0,0" VerticalAlignment="Top" Width="443">
+
+        </DataGrid>
+        <TextBox x:Name="N" HorizontalAlignment="Left" Height="23" Margin="40,36,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Предложений" HorizontalAlignment="Left" Margin="41,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="M" HorizontalAlignment="Left" Height="23" Margin="41,98,0,0" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Стратегии" HorizontalAlignment="Left" Margin="42,72,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="But1" Content="Обновить" HorizontalAlignment="Left" Margin="185,39,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click" Height="21"/>
+        <Button x:Name="But2" Content="Расчитать" HorizontalAlignment="Left" Margin="184,80,0,0" VerticalAlignment="Top" Width="136" Height="41" Click="Calculate"/>
+        <RichTextBox x:Name="richTextBox1" HorizontalAlignment="Left" Height="378" Margin="517,22,0,0" VerticalAlignment="Top" Width="244">
+        </RichTextBox>
+        <CheckBox x:Name="Valdi" Content="Вальди" HorizontalAlignment="Left" Margin="330,22,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Bernuli" Content="Бернули" HorizontalAlignment="Left" Margin="330,48,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Savidgc" Content="Сэвиджа" HorizontalAlignment="Left" Margin="427,21,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Gyrvich" Content="Гурвиц" HorizontalAlignment="Left" Margin="427,47,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

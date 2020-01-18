@@ -1,0 +1,17 @@
+﻿<Window x:Class="Client.Windows.Choose"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client.Windows"
+        mc:Ignorable="d"
+        Title="Choose" Height="472.277" Width="409.703" Closed="Window_Closed">
+    <Grid>
+        <Button x:Name="B1" Content="Интеграл" HorizontalAlignment="Left" Height="43" Margin="80,37,0,0" VerticalAlignment="Top" Width="241" Click="Button_Click"/>
+        <Button x:Name="B2" Content="Решение не линейных уравнений" HorizontalAlignment="Left" Height="43" Margin="80,117,0,0" VerticalAlignment="Top" Width="241" Click="Button_Click_1"/>
+        <Button x:Name="B3" Content="Решение задач о назначении" HorizontalAlignment="Left" Height="43" Margin="80,202,0,0" VerticalAlignment="Top" Width="241" Click="Button_Click_2"/>
+        <Button x:Name="B4" Content="Определение оптимального варианта" HorizontalAlignment="Left" Height="43" Margin="78,280,0,0" VerticalAlignment="Top" Width="241" Click="Button_Click_3"/>
+        <Button x:Name="B5" Content="Отрисовка графика" HorizontalAlignment="Left" Height="43" Margin="81,362,0,0" VerticalAlignment="Top" Width="241" Click="Button_Click_4"/>
+
+    </Grid>
+</Window>

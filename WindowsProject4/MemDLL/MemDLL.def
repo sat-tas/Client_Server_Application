@@ -1,0 +1,5 @@
+LIBRARY "MemDLL"
+EXPORTS
+Left @1
+Trap @2
+Mid @3

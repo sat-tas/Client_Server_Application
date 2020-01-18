@@ -1,0 +1,67 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns:winformchart="clr-namespace:System.Windows.Forms.DataVisualization.Charting;assembly=System.Windows.Forms.DataVisualization"  
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="430" Width="370" Loaded="Window_Loaded" Closed="Window_Closed">
+    <TabControl HorizontalAlignment="Left" Height="400" Margin="0,0,0,0" VerticalAlignment="Top" Width="360">
+        <TabItem Header="Вход" >
+            <Grid RenderTransformOrigin="0.498,0.372" Background="#FFACA7A7" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="70"></ColumnDefinition>
+                    <ColumnDefinition Width="70"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="80"/>
+
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="1" Grid.Column="1" VerticalAlignment="Center"  Height="30" FontWeight="Bold">Login</Label>
+                <TextBox x:Name="Login" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" Height="30" Margin="0,0,20,0"  TextWrapping="Wrap" Text="Admin" FontWeight="Bold" />
+                <Label Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Height="30" FontWeight="Bold" >Password</Label>
+                <TextBox x:Name="Password" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" Height="30" Margin="0,0,20,0"  TextWrapping="Wrap" Text="Admin" FontWeight="Bold" />
+                <Button Content="Вход" Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="45" Margin="10,51,60,-55" Grid.Row="3" VerticalAlignment="Top" Width="214" Grid.Column="1" Click="Login_Clicked"/>
+                <Label x:Name="ErrorLabel" Content="Неверный логин или пароль" Grid.Column="1" Margin="20,25,38,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="27" Grid.RowSpan="2" FontWeight="Bold" Foreground="#FFF70606" Visibility="Hidden"/>
+
+            </Grid>
+        </TabItem>
+        <TabItem Header="Регистрация">
+            <Grid Background="#FFE5E5E5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="57*"/>
+                </Grid.ColumnDefinitions>
+                <Grid RenderTransformOrigin="0.498,0.372" Background="#FFACA7A7" Grid.ColumnSpan="2" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="80"/>
+
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="1" Grid.Column="1" VerticalAlignment="Center"  Height="30" FontWeight="Bold" Content="Login"/>
+                    <TextBox x:Name="Login1" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" Height="30" Margin="0,0,20,0"  TextWrapping="Wrap" Text="Admin" FontWeight="Bold" />
+                    <Label Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Height="30" Content="Password" FontWeight="Bold" Margin="0,11,0,40" />
+                    <TextBox x:Name="Password1" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" Height="30" Margin="0,11,20,40"  TextWrapping="Wrap" Text="Admin" FontWeight="Bold" />
+                    <Button Content="Вход" Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="45" Margin="10,101,60,-105" Grid.Row="3" VerticalAlignment="Top" Width="214" Grid.Column="1" Click="Register_Clicked"/>
+                    <Label Content="Неверный логин или пароль" Grid.Column="1" Margin="20,25,38,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="27" Grid.RowSpan="2" FontWeight="Bold" Foreground="#FFF70606" Visibility="Hidden" x:Name="RegError"/>
+                    <TextBox x:Name="Email" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" Height="30" Margin="0,2,20,9"  TextWrapping="Wrap" Text="Admin" FontWeight="Bold" />
+                    <Label Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Height="30" Content="Email" Margin="0,0,0,11" FontWeight="Bold" />
+
+                </Grid>
+            </Grid>
+        </TabItem>
+    </TabControl>
+
+</Window>
